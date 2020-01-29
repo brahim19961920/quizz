@@ -48,17 +48,17 @@ if(b3->isChecked()){
 }
 
 question::question(int num,QString s1,QString s2,QString s3,QString s4,QString s5):QWidget()
-{   m_num=num;
-    m_s1=s1;
-
+{    m_num=num;
+     m_s1=s1;
      m_s2=s2;
      m_s3=s3;
      m_s4=s5;
      m_s5=s5;
+
      b1=new QRadioButton(s2);
 
-           b2=new QRadioButton(s3);
-              b3=new QRadioButton(s4);
+     b2=new QRadioButton(s3);
+     b3=new QRadioButton(s4);
 
     form =new QFormLayout;
     form->addRow(b1);
@@ -70,7 +70,7 @@ question::question(int num,QString s1,QString s2,QString s3,QString s4,QString s
     box=new QGroupBox(ch);
     box->setLayout(form);
     layout=new QVBoxLayout;
-     layout->addWidget(label);
+    layout->addWidget(label);
     layout->addWidget(box);
     this->setLayout(layout);
 
